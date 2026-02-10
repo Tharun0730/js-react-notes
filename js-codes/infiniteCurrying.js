@@ -22,7 +22,7 @@ function addCurr(a) {
 
 console.log(addCurr(5)(3));      // 8
 console.log(addCurr(1)(2)(3));   // 6
-console.log(addCurr(5)(0)(2));   // 7
+console.log(addCurr(5)(0)(2));   
 
 
 
