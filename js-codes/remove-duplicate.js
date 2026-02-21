@@ -7,7 +7,7 @@ const removeDuplicate = (arr) => {
     let found = false;
 
     for (let j = 0; j < result.length; j++) {
-        console.log(i,arr[j])
+      console.log(i, arr[j]);
       if (result[j] === arr[i]) {
         found = true;
         break;
@@ -15,9 +15,8 @@ const removeDuplicate = (arr) => {
     }
 
     if (!found) {
-       
       result[result.length] = arr[i];
-      found=false
+      found = false;
     }
   }
   return result;
