@@ -13,4 +13,18 @@ function flatArray(arr,result){
 
 
 console.log(flatArray(arr,[]))
+2.
+//  function flatArray(arr,result=[]){
+//  for(let i of arr){
+//      if(Array.isArray(i)){
+//          return flatArray(i,result)
+//      }else{
+//          result.push(i)
+//      }
+     
+//  }   
  
+//  return result 
+// }
+
+// console.log(flatArray(arr))
