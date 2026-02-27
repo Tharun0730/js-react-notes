@@ -13,7 +13,6 @@ function flatArray(arr,result){
 
 
 console.log(flatArray(arr,[]))
-2.
 //  function flatArray(arr,result=[]){
 //  for(let i of arr){
 //      if(Array.isArray(i)){
