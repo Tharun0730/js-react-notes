@@ -6,7 +6,7 @@ function debounce(fn,delay){
     
     let timer;
     return function(...args){
-        // clearTimeout(timer);
+        clearTimeout(timer);
         const content =this
          timer=setTimeout(()=>{
             fn.apply(content,args)
