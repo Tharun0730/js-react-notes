@@ -23,3 +23,23 @@ const removeDuplicate = (arr) => {
 };
 
 console.log(removeDuplicate(arr));
+
+
+
+const duplicateArray = [1, 2, 3, 3, 4];
+
+function removeDuplicates(arr) {
+    const result = [];
+    const seen = {};
+
+    for (const item of arr) {
+        if (!seen[item]) {
+            result.push(item);
+            seen[item] = true;
+        }
+    }
+
+    return result;
+}
+
+console.log(removeDuplicates(duplicateArray));
