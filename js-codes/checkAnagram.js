@@ -22,3 +22,24 @@ function CheckAnagram(word1,word2){
     return true
 }    
 console.log(CheckAnagram(word1,word2))
+
+
+
+// method 2 with true and false check 
+function checkAnagrams(str1, str2) {
+  const obj = {};
+
+  for (const char1 of str1) {
+    obj[char1] = true;
+  }
+
+  for (const char2 of str2) {
+    if (!obj[char2]) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+console.log(checkAnagrams(str1, str2));
