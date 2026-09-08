@@ -1,26 +1,24 @@
-let arr = [1, 2, 3, 4, 5];
-let n = 2;
+const arr = [1, 2, 3];
+const size = 1;
 
-function chunkArray(arr, n) {
-    let result = [];
-    let current = [];
+function chunkArray(arr, size) {
+  const result = [];
+  let temp = [];
 
-    for (let i = 0; i < arr.length; i++) {
-
-        current.push(arr[i]);
-
-        if (current.length === n) {
-            result.push(current);
-            current = [];
-        }
+  for (const item of arr) {
+    if (temp.length === size) {
+      result.push(temp);
+      temp = [];
     }
 
+    temp.push(item);
+  }
 
-    if (current.length > 0) {
-        result.push(current);
-    }
+  if (temp.length) {
+    result.push(temp);
+  }
 
-    return result;
+  return result;
 }
 
-console.log(chunkArray(arr, n));
+console.log(chunkArray(arr, size));
